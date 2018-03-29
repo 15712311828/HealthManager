@@ -110,6 +110,7 @@
 
 
     <build>
+        <finalName>HealthManager</finalName>
         <plugins>
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
