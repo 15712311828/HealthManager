@@ -7,11 +7,13 @@ import com.healthmanager.param.*;
 import com.healthmanager.service.UserService;
 import com.healthmanager.service.VerificationCodeService;
 import com.healthmanager.util.ValidUtil;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/user")
@@ -24,21 +26,21 @@ public class UserController {
     private VerificationCodeService verificationCodeService;
 
     @RequestMapping("/verificationCode")
-    public JsonResult verificationCode(VerificationCodeParam param){
+    public JsonResult verificationCode(@RequestBody @Valid VerificationCodeParam param){
         verificationCodeService.sendCode(param.getEmail());
         return JsonResult.success();
     }
 
 
     @RequestMapping("/signUp")
-    public JsonResult signUp(SignUpParam param){
+    public JsonResult signUp(@RequestBody @Valid SignUpParam param){
         verificationCodeService.checkCode(param.getEmail(),param.getVerificationCode());
         userService.signUp(param);
         return JsonResult.success();
     }
 
     @RequestMapping("/signIn")
-    public JsonResult signIn(SignInParam param, HttpServletResponse response){
+    public JsonResult signIn(@RequestBody @Valid SignInParam param, HttpServletResponse response){
         userService.signIn(param,response);
         return JsonResult.success();
     }
@@ -50,14 +52,14 @@ public class UserController {
     }
 
     @RequestMapping("/changeInfo")
-    public JsonResult changeInfo(ChangeInfoParam param){
+    public JsonResult changeInfo(@RequestBody @Valid ChangeInfoParam param){
         ValidUtil.checkLogin();
         userService.changeInfo(param);
         return JsonResult.success();
     }
 
     @RequestMapping("/changePassword")
-    public JsonResult changePassword(ChangePasswordParam param){
+    public JsonResult changePassword(@RequestBody @Valid ChangePasswordParam param){
         ValidUtil.checkLogin();
         userService.changePassword(param);
         return JsonResult.success();
