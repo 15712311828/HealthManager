@@ -22,7 +22,7 @@ public class VerificationCodeService {
         EmailUtil.sendMailAsync(email,"验证码","您的验证码为"+randNum);
         VerificationCodeExample verificationCodeExample=new VerificationCodeExample();
         VerificationCodeExample.Criteria criteria = verificationCodeExample.createCriteria();
-        criteria.andEmailEqualTo("email");
+        criteria.andEmailEqualTo(email);
         long result = verificationCodeMapper.countByExample(verificationCodeExample);
         if(result==0){
             VerificationCode verificationCode=new VerificationCode();
