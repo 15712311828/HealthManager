@@ -34,7 +34,7 @@ public class VerificationCodeService {
             VerificationCode verificationCode=new VerificationCode();
             verificationCode.setEmail(email);
             verificationCode.setCode(randNum+"");
-            verificationCodeMapper.updateByExample(verificationCode,verificationCodeExample);
+            verificationCodeMapper.updateByExampleSelective(verificationCode,verificationCodeExample);
         }
     }
 

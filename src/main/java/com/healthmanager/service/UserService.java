@@ -61,12 +61,12 @@ public class UserService {
     public void changeInfo(ChangeInfoParam param){
         User user = param.toUser();
         user.setId(UserContext.getId());
-        userMapper.updateByPrimaryKey(user);
+        userMapper.updateByPrimaryKeySelective(user);
     }
 
     public void changePassword(ChangePasswordParam param){
         User user = param.toUser();
         user.setId(UserContext.getId());
-        userMapper.updateByPrimaryKey(user);
+        userMapper.updateByPrimaryKeySelective(user);
     }
 }
