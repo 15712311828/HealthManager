@@ -8,8 +8,8 @@ public class LoginUtil {
 
     public static final String KEY="asdfqwer";
 
-    public static void keepLogin(String userName,HttpServletResponse response){
-        Cookie nameCookie=new Cookie("_u",CryptUtil.aesEncrypt(userName,KEY));
+    public static void keepLogin(String email,HttpServletResponse response){
+        Cookie nameCookie=new Cookie("_u",CryptUtil.aesEncrypt(email,KEY));
         nameCookie.setPath("/");
         Cookie timeCookie=new Cookie("_t",CryptUtil.aesEncrypt(System.currentTimeMillis()+"",KEY));
         timeCookie.setPath("/");
@@ -17,16 +17,16 @@ public class LoginUtil {
         response.addCookie(timeCookie);
     }
 
-    public static String getLoginName(Cookie[] cookies,HttpServletResponse response){
-        String name=null;
+    public static String getLoginEmail(Cookie[] cookies,HttpServletResponse response){
+        String email=null;
         Long time=null;
         for(Cookie cookie:cookies){
             if(cookie.getName().equals("_u")){
                 try {
-                    name = CryptUtil.aesDecrypt(cookie.getValue(), KEY);
+                    email = CryptUtil.aesDecrypt(cookie.getValue(), KEY);
                 }
                 catch (Exception e){
-                    name=null;
+                    email=null;
                 }
             }
             if(cookie.getName().equals("_t")){
@@ -38,14 +38,14 @@ public class LoginUtil {
                 }
             }
         }
-        if(time==null||name==null){
+        if(time==null||email==null){
             return null;
         }
         if(System.currentTimeMillis()-time<3000000){
             Cookie timeCookie=new Cookie("_t",CryptUtil.aesEncrypt(System.currentTimeMillis()+"",KEY));
             timeCookie.setPath("/");
             response.addCookie(timeCookie);
-            return name;
+            return email;
         }
         return null;
     }
