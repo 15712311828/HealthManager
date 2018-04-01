@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2317178-5ca0-48e8-9f1f-309742ad255b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/LoginUtil.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/LoginUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../HealthManager/out/" />
     <ignored path="$PROJECT_DIR$/../HealthManager/target/" />
@@ -59,8 +57,8 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="53" column="42" lean-forward="true" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+            <state relative-caret-position="71">
+              <caret line="61" column="60" lean-forward="true" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -681,7 +679,7 @@
       <workItem from="1521804719072" duration="3976000" />
       <workItem from="1522052837458" duration="1403000" />
       <workItem from="1522221533842" duration="32205000" />
-      <workItem from="1522507089081" duration="15122000" />
+      <workItem from="1522507089081" duration="15500000" />
     </task>
     <servers />
   </component>
@@ -718,7 +716,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52706000" />
+    <option name="totallyTimeSpent" value="53084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1189,8 +1187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="53" column="42" lean-forward="true" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+        <state relative-caret-position="71">
+          <caret line="61" column="60" lean-forward="true" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
