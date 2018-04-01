@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2317178-5ca0-48e8-9f1f-309742ad255b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/../HealthManager/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/target/HealthManager/WEB-INF/classes/application.yml" afterPath="$PROJECT_DIR$/../HealthManager/target/HealthManager/WEB-INF/classes/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/../HealthManager/out/" />
     <ignored path="$PROJECT_DIR$/../HealthManager/target/" />
@@ -425,7 +425,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CryptUtilTest.test">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration name="CryptUtilTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -678,14 +678,11 @@
       <workItem from="1521804719072" duration="3976000" />
       <workItem from="1522052837458" duration="1403000" />
       <workItem from="1522221533842" duration="32205000" />
-      <workItem from="1522507089081" duration="16502000" />
+      <workItem from="1522507089081" duration="16553000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CryptUtilTest_test - 2018.04.01 at 14h 27m 12s.xml">
-      <configuration name="CryptUtilTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CryptUtilTest_test - 2018.04.01 at 14h 27m 31s.xml">
       <configuration name="CryptUtilTest.test" configurationId="JUnit" />
     </history-entry>
@@ -713,9 +710,12 @@
     <history-entry file="CryptUtilTest_test - 2018.04.01 at 17h 07m 40s.xml">
       <configuration name="CryptUtilTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CryptUtilTest_test - 2018.04.01 at 17h 48m 22s.xml">
+      <configuration name="CryptUtilTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54086000" />
+    <option name="totallyTimeSpent" value="54137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
