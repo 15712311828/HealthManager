@@ -10,6 +10,9 @@ import javax.validation.constraints.NotNull;
 public class ChangePasswordParam {
 
     @NotNull
+    private String oldPassword;
+
+    @NotNull
     @Length(min = 6,max = 15,message = "密码长度需要6-15")
     private String password;
 

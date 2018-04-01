@@ -1,6 +1,7 @@
 package com.healthmanager.controller;
 
 
+import com.google.common.base.Preconditions;
 import com.healthmanager.common.JsonResult;
 import com.healthmanager.common.UserContext;
 import com.healthmanager.param.*;
@@ -61,6 +62,7 @@ public class UserController {
     @RequestMapping("/changePassword")
     public JsonResult changePassword(@RequestBody @Valid ChangePasswordParam param){
         ValidUtil.checkLogin();
+        Preconditions.checkArgument(param.getOldPassword().equals(UserContext.get().getPassword()),"旧密码不正确");
         userService.changePassword(param);
         return JsonResult.success();
     }
