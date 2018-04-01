@@ -55,15 +55,17 @@ public class UserService {
         }
         List<User> users = userMapper.selectByExample(userExample);
         ValidUtil.checkExist(users,"用户名或密码错误");
-        LoginUtil.keepLogin(users.get(0).getName(),response);
+        LoginUtil.keepLogin(users.get(0).getEmail(),response);
     }
 
     public void changeInfo(ChangeInfoParam param){
-        UserExample nameExample=new UserExample();
-        UserExample.Criteria nameCriteria = nameExample.createCriteria();
-        nameCriteria.andNameEqualTo(param.getName());
-        long nameResult = userMapper.countByExample(nameExample);
-        ValidUtil.checkNonExist(nameResult,"用户名已被注册");
+        if(param.getName()!=UserContext.getName()) {
+            UserExample nameExample = new UserExample();
+            UserExample.Criteria nameCriteria = nameExample.createCriteria();
+            nameCriteria.andNameEqualTo(param.getName());
+            long nameResult = userMapper.countByExample(nameExample);
+            ValidUtil.checkNonExist(nameResult, "用户名已被注册");
+        }
 
         User user = param.toUser();
         user.setId(UserContext.getId());

@@ -26,13 +26,13 @@ public class LoginInterceptor implements HandlerInterceptor {
         if(cookies == null){
             return true;
         }
-        String name= LoginUtil.getLoginName(cookies,httpServletResponse);
-        if(name==null){
+        String email= LoginUtil.getLoginEmail(cookies,httpServletResponse);
+        if(email==null){
             return true;
         }
         UserExample example=new UserExample();
         UserExample.Criteria criteria = example.createCriteria();
-        criteria.andNameEqualTo(name);
+        criteria.andEmailEqualTo(email);
         List<User> users = userMapper.selectByExample(example);
         if(users.size()>=1){
             UserContext.set(users.get(0));
