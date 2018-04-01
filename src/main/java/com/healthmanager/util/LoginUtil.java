@@ -41,7 +41,7 @@ public class LoginUtil {
         if(time==null||name==null){
             return null;
         }
-        if(System.currentTimeMillis()-time<300000){
+        if(System.currentTimeMillis()-time<3000000){
             return name;
         }
         return null;
