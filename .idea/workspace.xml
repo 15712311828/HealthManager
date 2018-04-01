@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2317178-5ca0-48e8-9f1f-309742ad255b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/GlobalExceptionHandler.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/GlobalExceptionHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ChangePasswordParam.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ChangePasswordParam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../HealthManager/out/" />
     <ignored path="$PROJECT_DIR$/../HealthManager/target/" />
@@ -71,8 +69,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-706">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="130">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GlobalExceptionHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GlobalExceptionHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/GlobalExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="152">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -112,11 +110,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verification_code" pinned="false" current-in-tab="false">
-        <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.verification_code">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,6 +130,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LoginUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/LoginUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-264">
+              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/UserContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="VerificationCodeParam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/VerificationCodeParam.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,25 +158,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
-              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="false">
-        <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -202,7 +202,6 @@
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/exception/CryptException.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/CryptUtil.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/LoginUtil.java" />
-        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ChangeInfoParam.java" />
         <option value="$PROJECT_DIR$/../HealthManager/pom.xml" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/VerificationCodeParam.java" />
@@ -212,6 +211,7 @@
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ChangePasswordParam.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java" />
       </list>
     </option>
   </component>
@@ -325,6 +325,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="healthmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HealthManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HealthManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="healthmanager" type="462c0819:PsiDirectoryNode" />
               <item name="param" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -335,6 +344,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="healthmanager" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HealthManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HealthManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="healthmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HealthManager" type="b2602c69:ProjectViewProjectNode" />
@@ -637,7 +655,7 @@
       <workItem from="1521804719072" duration="3976000" />
       <workItem from="1522052837458" duration="1403000" />
       <workItem from="1522221533842" duration="32205000" />
-      <workItem from="1522507089081" duration="6009000" />
+      <workItem from="1522507089081" duration="8632000" />
     </task>
     <servers />
   </component>
@@ -674,14 +692,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43593000" />
+    <option name="totallyTimeSpent" value="46216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3789127" sideWeight="0.27760968" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5782537" sideWeight="0.27760968" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -698,7 +716,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3789127" sideWeight="0.7223903" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5782537" sideWeight="0.7223903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -890,16 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/UserContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-          <folding>
-            <element signature="e#160#166#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/JsonResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1051,36 +1059,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/LoginUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="112" column="44" lean-forward="false" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.verification_code">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1095,14 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-288">
           <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ChangeInfoParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1145,20 +1120,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.verification_code">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ChangeInfoParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/UserContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-706">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/GlobalExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="171">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/LoginUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding />
         </state>
       </provider>

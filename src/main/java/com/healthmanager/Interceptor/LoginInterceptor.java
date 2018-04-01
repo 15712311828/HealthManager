@@ -27,6 +27,9 @@ public class LoginInterceptor implements HandlerInterceptor {
             return true;
         }
         String name= LoginUtil.getLoginName(cookies);
+        if(name==null){
+            return true;
+        }
         UserExample example=new UserExample();
         UserExample.Criteria criteria = example.createCriteria();
         criteria.andNameEqualTo(name);
