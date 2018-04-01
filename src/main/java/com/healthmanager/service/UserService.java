@@ -59,7 +59,7 @@ public class UserService {
     }
 
     public void changeInfo(ChangeInfoParam param){
-        if(param.getName()!=UserContext.getName()) {
+        if(!param.getName().equals(UserContext.getName())) {
             UserExample nameExample = new UserExample();
             UserExample.Criteria nameCriteria = nameExample.createCriteria();
             nameCriteria.andNameEqualTo(param.getName());
