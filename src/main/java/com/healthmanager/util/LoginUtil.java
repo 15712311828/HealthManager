@@ -17,7 +17,7 @@ public class LoginUtil {
         response.addCookie(timeCookie);
     }
 
-    public static String getLoginName(Cookie[] cookies){
+    public static String getLoginName(Cookie[] cookies,HttpServletResponse response){
         String name=null;
         Long time=null;
         for(Cookie cookie:cookies){
@@ -42,6 +42,9 @@ public class LoginUtil {
             return null;
         }
         if(System.currentTimeMillis()-time<3000000){
+            Cookie timeCookie=new Cookie("_t",CryptUtil.aesEncrypt(System.currentTimeMillis()+"",KEY));
+            timeCookie.setPath("/");
+            response.addCookie(timeCookie);
             return name;
         }
         return null;
