@@ -17,7 +17,7 @@ public class ChangeInfoParam {
 
     @NotNull
     @Min(value = 0)
-    @Max(value = 0)
+    @Max(value = 1)
     private Integer sex;
 
     @NotNull
