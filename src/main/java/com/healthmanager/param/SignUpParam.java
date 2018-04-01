@@ -17,7 +17,7 @@ public class SignUpParam {
     private String name;
 
     @NotNull
-    @Length(min = 8,max = 15,message = "密码长度需要8-15")
+    @Length(min = 6,max = 15,message = "密码长度需要6-15")
     private String password;
 
     @NotNull
@@ -29,7 +29,7 @@ public class SignUpParam {
 
     @NotNull
     @Min(value = 0)
-    @Max(value = 0)
+    @Max(value = 1)
     private Integer sex;
 
     @NotNull

@@ -8,8 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2317178-5ca0-48e8-9f1f-309742ad255b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../HealthManager/out/" />
     <ignored path="$PROJECT_DIR$/../HealthManager/target/" />
@@ -79,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerificationCodeService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VerificationCodeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-7">
@@ -87,6 +86,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="verification_code" pinned="false" current-in-tab="false">
+        <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.verification_code">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -99,6 +107,25 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpParam.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+        <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -135,7 +162,6 @@
         <option value="$PROJECT_DIR$/../HealthManager/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/common/UserContext.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/Application.java" />
-        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignInParam.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/test/java/com/healthmanager/util/EmailUtilTest.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/util/EmailUtil.java" />
@@ -152,6 +178,7 @@
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
+        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java" />
       </list>
     </option>
   </component>
@@ -550,7 +577,7 @@
       <workItem from="1521804719072" duration="3976000" />
       <workItem from="1522052837458" duration="1403000" />
       <workItem from="1522221533842" duration="32205000" />
-      <workItem from="1522507089081" duration="3908000" />
+      <workItem from="1522507089081" duration="5432000" />
     </task>
     <servers />
   </component>
@@ -587,7 +614,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41492000" />
+    <option name="totallyTimeSpent" value="43016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -663,7 +690,7 @@
         <state relative-caret-position="228">
           <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -800,13 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -973,7 +993,7 @@
         <state relative-caret-position="228">
           <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -983,16 +1003,8 @@
         <state relative-caret-position="76">
           <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +1031,7 @@
         <state relative-caret-position="20">
           <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,23 +1041,6 @@
         <state relative-caret-position="133">
           <caret line="112" column="44" lean-forward="false" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/VerificationCodeParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.verification_code">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1076,6 +1071,38 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.verification_code">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/VerificationCodeParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/SignUpParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
