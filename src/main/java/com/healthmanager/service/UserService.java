@@ -59,6 +59,12 @@ public class UserService {
     }
 
     public void changeInfo(ChangeInfoParam param){
+        UserExample nameExample=new UserExample();
+        UserExample.Criteria nameCriteria = nameExample.createCriteria();
+        nameCriteria.andNameEqualTo(param.getName());
+        long nameResult = userMapper.countByExample(nameExample);
+        ValidUtil.checkNonExist(nameResult,"用户名已被注册");
+
         User user = param.toUser();
         user.setId(UserContext.getId());
         userMapper.updateByPrimaryKeySelective(user);
