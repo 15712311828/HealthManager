@@ -38,6 +38,9 @@ public class LoginUtil {
                 }
             }
         }
+        if(time==null||name==null){
+            return null;
+        }
         if(System.currentTimeMillis()-time<300000){
             return name;
         }
