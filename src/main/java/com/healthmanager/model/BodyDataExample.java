@@ -225,63 +225,63 @@ public class BodyDataExample {
             return (Criteria) this;
         }
 
-        public Criteria andHtightIsNull() {
-            addCriterion("htight is null");
+        public Criteria andHeightIsNull() {
+            addCriterion("height is null");
             return (Criteria) this;
         }
 
-        public Criteria andHtightIsNotNull() {
-            addCriterion("htight is not null");
+        public Criteria andHeightIsNotNull() {
+            addCriterion("height is not null");
             return (Criteria) this;
         }
 
-        public Criteria andHtightEqualTo(BigDecimal value) {
-            addCriterion("htight =", value, "htight");
+        public Criteria andHeightEqualTo(BigDecimal value) {
+            addCriterion("height =", value, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightNotEqualTo(BigDecimal value) {
-            addCriterion("htight <>", value, "htight");
+        public Criteria andHeightNotEqualTo(BigDecimal value) {
+            addCriterion("height <>", value, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightGreaterThan(BigDecimal value) {
-            addCriterion("htight >", value, "htight");
+        public Criteria andHeightGreaterThan(BigDecimal value) {
+            addCriterion("height >", value, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("htight >=", value, "htight");
+        public Criteria andHeightGreaterThanOrEqualTo(BigDecimal value) {
+            addCriterion("height >=", value, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightLessThan(BigDecimal value) {
-            addCriterion("htight <", value, "htight");
+        public Criteria andHeightLessThan(BigDecimal value) {
+            addCriterion("height <", value, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("htight <=", value, "htight");
+        public Criteria andHeightLessThanOrEqualTo(BigDecimal value) {
+            addCriterion("height <=", value, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightIn(List<BigDecimal> values) {
-            addCriterion("htight in", values, "htight");
+        public Criteria andHeightIn(List<BigDecimal> values) {
+            addCriterion("height in", values, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightNotIn(List<BigDecimal> values) {
-            addCriterion("htight not in", values, "htight");
+        public Criteria andHeightNotIn(List<BigDecimal> values) {
+            addCriterion("height not in", values, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("htight between", value1, value2, "htight");
+        public Criteria andHeightBetween(BigDecimal value1, BigDecimal value2) {
+            addCriterion("height between", value1, value2, "height");
             return (Criteria) this;
         }
 
-        public Criteria andHtightNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("htight not between", value1, value2, "htight");
+        public Criteria andHeightNotBetween(BigDecimal value1, BigDecimal value2) {
+            addCriterion("height not between", value1, value2, "height");
             return (Criteria) this;
         }
 

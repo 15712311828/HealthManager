@@ -22,15 +22,16 @@ public class GlobalExceptionHandler {
         return JsonResult.fail("参数校验错误");
     }
 
+    @ExceptionHandler(BusinessException.class)
+    @ResponseBody
+    public JsonResult businessExceptionHandler(BusinessException e) {
+        return JsonResult.fail(e.getStatus(),e.getMessage());
+    }
+
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public JsonResult handleAllException(Exception e) {
-        if(e instanceof BusinessException){
-
-        }
-        else{
-            log.error("",e);
-        }
+        log.error("",e);
         return JsonResult.fail(e.getMessage());
     }
 }

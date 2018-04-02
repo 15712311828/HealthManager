@@ -7,7 +7,7 @@ public class BodyData {
 
     private Integer userid;
 
-    private BigDecimal htight;
+    private BigDecimal height;
 
     private BigDecimal weight;
 
@@ -27,12 +27,12 @@ public class BodyData {
         this.userid = userid;
     }
 
-    public BigDecimal getHtight() {
-        return htight;
+    public BigDecimal getHeight() {
+        return height;
     }
 
-    public void setHtight(BigDecimal htight) {
-        this.htight = htight;
+    public void setHeight(BigDecimal height) {
+        this.height = height;
     }
 
     public BigDecimal getWeight() {

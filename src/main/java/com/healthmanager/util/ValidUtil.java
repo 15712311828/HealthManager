@@ -34,7 +34,7 @@ public class ValidUtil {
 
     public static void checkLogin(){
         if(UserContext.get()==null){
-            throw new BusinessException("请先登录");
+            throw new BusinessException(-100,"请先登录");
         }
     }
 }
