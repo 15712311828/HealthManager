@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 public class HeartUpdateParam {
 
     @NotNull
-    @Min(value = 10,message = "参数不正确")
+    @Min(value = 0,message = "参数不正确")
     public Integer rate;
 
     public HeartData toHeartData(){
