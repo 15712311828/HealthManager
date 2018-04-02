@@ -21,7 +21,7 @@ public class BodyUpdateParam {
         BodyData bodyData=new BodyData();
         bodyData.setHeight(height);
         bodyData.setWeight(weight);
-        bodyData.setUserid(UserContext.getId());
+        bodyData.setUserId(UserContext.getId());
         return bodyData;
     }
 }

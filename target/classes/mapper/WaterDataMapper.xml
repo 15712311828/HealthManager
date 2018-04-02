@@ -3,7 +3,7 @@
 <mapper namespace="com.healthmanager.dao.WaterDataMapper">
   <resultMap id="BaseResultMap" type="com.healthmanager.model.WaterData">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="milliliter" jdbcType="INTEGER" property="milliliter" />
     <result column="time" jdbcType="TIMESTAMP" property="time" />
   </resultMap>
@@ -66,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, userId, milliliter, time
+    id, user_id, milliliter, time
   </sql>
   <select id="selectByExample" parameterType="com.healthmanager.model.WaterDataExample" resultMap="BaseResultMap">
     select
@@ -99,9 +99,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.healthmanager.model.WaterData">
-    insert into water_data (id, userId, milliliter, 
+    insert into water_data (id, user_id, milliliter, 
       time)
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{milliliter,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{milliliter,jdbcType=INTEGER}, 
       #{time,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.healthmanager.model.WaterData">
@@ -110,8 +110,8 @@
       <if test="id != null">
         id,
       </if>
-      <if test="userid != null">
-        userId,
+      <if test="userId != null">
+        user_id,
       </if>
       <if test="milliliter != null">
         milliliter,
@@ -124,8 +124,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userid != null">
-        #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
       </if>
       <if test="milliliter != null">
         #{milliliter,jdbcType=INTEGER},
@@ -147,8 +147,8 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.userid != null">
-        userId = #{record.userid,jdbcType=INTEGER},
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
       </if>
       <if test="record.milliliter != null">
         milliliter = #{record.milliliter,jdbcType=INTEGER},
@@ -164,7 +164,7 @@
   <update id="updateByExample" parameterType="map">
     update water_data
     set id = #{record.id,jdbcType=INTEGER},
-      userId = #{record.userid,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
       milliliter = #{record.milliliter,jdbcType=INTEGER},
       time = #{record.time,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
@@ -174,8 +174,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.healthmanager.model.WaterData">
     update water_data
     <set>
-      <if test="userid != null">
-        userId = #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
       </if>
       <if test="milliliter != null">
         milliliter = #{milliliter,jdbcType=INTEGER},
@@ -188,7 +188,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.WaterData">
     update water_data
-    set userId = #{userid,jdbcType=INTEGER},
+    set user_id = #{userId,jdbcType=INTEGER},
       milliliter = #{milliliter,jdbcType=INTEGER},
       time = #{time,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}

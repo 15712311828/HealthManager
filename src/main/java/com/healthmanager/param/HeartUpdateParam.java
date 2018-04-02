@@ -17,7 +17,7 @@ public class HeartUpdateParam {
     public HeartData toHeartData(){
         HeartData heartData=new HeartData();
         heartData.setRate(rate);
-        heartData.setUserid(UserContext.getId());
+        heartData.setUserId(UserContext.getId());
         return heartData;
     }
 }

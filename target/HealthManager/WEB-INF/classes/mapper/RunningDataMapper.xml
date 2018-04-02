@@ -3,7 +3,7 @@
 <mapper namespace="com.healthmanager.dao.RunningDataMapper">
   <resultMap id="BaseResultMap" type="com.healthmanager.model.RunningData">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="step" jdbcType="INTEGER" property="step" />
     <result column="distance" jdbcType="INTEGER" property="distance" />
     <result column="time" jdbcType="DATE" property="time" />
@@ -67,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, userId, step, distance, time
+    id, user_id, step, distance, time
   </sql>
   <select id="selectByExample" parameterType="com.healthmanager.model.RunningDataExample" resultMap="BaseResultMap">
     select
@@ -100,9 +100,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.healthmanager.model.RunningData">
-    insert into running_data (id, userId, step, 
+    insert into running_data (id, user_id, step, 
       distance, time)
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{step,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{step,jdbcType=INTEGER}, 
       #{distance,jdbcType=INTEGER}, #{time,jdbcType=DATE})
   </insert>
   <insert id="insertSelective" parameterType="com.healthmanager.model.RunningData">
@@ -111,8 +111,8 @@
       <if test="id != null">
         id,
       </if>
-      <if test="userid != null">
-        userId,
+      <if test="userId != null">
+        user_id,
       </if>
       <if test="step != null">
         step,
@@ -128,8 +128,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userid != null">
-        #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
       </if>
       <if test="step != null">
         #{step,jdbcType=INTEGER},
@@ -154,8 +154,8 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.userid != null">
-        userId = #{record.userid,jdbcType=INTEGER},
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
       </if>
       <if test="record.step != null">
         step = #{record.step,jdbcType=INTEGER},
@@ -174,7 +174,7 @@
   <update id="updateByExample" parameterType="map">
     update running_data
     set id = #{record.id,jdbcType=INTEGER},
-      userId = #{record.userid,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
       step = #{record.step,jdbcType=INTEGER},
       distance = #{record.distance,jdbcType=INTEGER},
       time = #{record.time,jdbcType=DATE}
@@ -185,8 +185,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.healthmanager.model.RunningData">
     update running_data
     <set>
-      <if test="userid != null">
-        userId = #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
       </if>
       <if test="step != null">
         step = #{step,jdbcType=INTEGER},
@@ -202,7 +202,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.RunningData">
     update running_data
-    set userId = #{userid,jdbcType=INTEGER},
+    set user_id = #{userId,jdbcType=INTEGER},
       step = #{step,jdbcType=INTEGER},
       distance = #{distance,jdbcType=INTEGER},
       time = #{time,jdbcType=DATE}

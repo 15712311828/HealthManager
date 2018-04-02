@@ -3,7 +3,7 @@
 <mapper namespace="com.healthmanager.dao.HeartDataMapper">
   <resultMap id="BaseResultMap" type="com.healthmanager.model.HeartData">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="rate" jdbcType="INTEGER" property="rate" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -65,7 +65,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, userId, rate
+    id, user_id, rate
   </sql>
   <select id="selectByExample" parameterType="com.healthmanager.model.HeartDataExample" resultMap="BaseResultMap">
     select
@@ -98,9 +98,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.healthmanager.model.HeartData">
-    insert into heart_data (id, userId, rate
+    insert into heart_data (id, user_id, rate
       )
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{rate,jdbcType=INTEGER}
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{rate,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.healthmanager.model.HeartData">
@@ -109,8 +109,8 @@
       <if test="id != null">
         id,
       </if>
-      <if test="userid != null">
-        userId,
+      <if test="userId != null">
+        user_id,
       </if>
       <if test="rate != null">
         rate,
@@ -120,8 +120,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userid != null">
-        #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
       </if>
       <if test="rate != null">
         #{rate,jdbcType=INTEGER},
@@ -140,8 +140,8 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.userid != null">
-        userId = #{record.userid,jdbcType=INTEGER},
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
       </if>
       <if test="record.rate != null">
         rate = #{record.rate,jdbcType=INTEGER},
@@ -154,7 +154,7 @@
   <update id="updateByExample" parameterType="map">
     update heart_data
     set id = #{record.id,jdbcType=INTEGER},
-      userId = #{record.userid,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
       rate = #{record.rate,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -163,8 +163,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.healthmanager.model.HeartData">
     update heart_data
     <set>
-      <if test="userid != null">
-        userId = #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
       </if>
       <if test="rate != null">
         rate = #{rate,jdbcType=INTEGER},
@@ -174,7 +174,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.HeartData">
     update heart_data
-    set userId = #{userid,jdbcType=INTEGER},
+    set user_id = #{userId,jdbcType=INTEGER},
       rate = #{rate,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>

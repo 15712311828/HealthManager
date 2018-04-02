@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class BodyData {
     private Integer id;
 
-    private Integer userid;
+    private Integer userId;
 
     private BigDecimal height;
 
@@ -19,12 +19,12 @@ public class BodyData {
         this.id = id;
     }
 
-    public Integer getUserid() {
-        return userid;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public BigDecimal getHeight() {

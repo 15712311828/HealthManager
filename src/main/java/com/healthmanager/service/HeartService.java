@@ -21,7 +21,7 @@ public class HeartService {
     public void update(HeartUpdateParam heartUpdateParam){
         HeartDataExample heartDataExample=new HeartDataExample();
         HeartDataExample.Criteria criteria = heartDataExample.createCriteria();
-        criteria.andUseridEqualTo(UserContext.getId());
+        criteria.andUserIdEqualTo(UserContext.getId());
         Long result = heartDataMapper.countByExample(heartDataExample);
 
         if(result==0){
@@ -35,7 +35,7 @@ public class HeartService {
     public HeartData query(){
         HeartDataExample heartDataExample=new HeartDataExample();
         HeartDataExample.Criteria criteria = heartDataExample.createCriteria();
-        criteria.andUseridEqualTo(UserContext.getId());
+        criteria.andUserIdEqualTo(UserContext.getId());
         List<HeartData> heartDatas = heartDataMapper.selectByExample(heartDataExample);
         ValidUtil.checkExist(heartDatas,"暂无数据");
         return heartDatas.get(0);

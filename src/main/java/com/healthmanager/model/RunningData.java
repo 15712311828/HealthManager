@@ -5,7 +5,7 @@ import java.util.Date;
 public class RunningData {
     private Integer id;
 
-    private Integer userid;
+    private Integer userId;
 
     private Integer step;
 
@@ -21,12 +21,12 @@ public class RunningData {
         this.id = id;
     }
 
-    public Integer getUserid() {
-        return userid;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Integer getStep() {

@@ -3,7 +3,7 @@
 <mapper namespace="com.healthmanager.dao.BodyDataMapper">
   <resultMap id="BaseResultMap" type="com.healthmanager.model.BodyData">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="height" jdbcType="DECIMAL" property="height" />
     <result column="weight" jdbcType="DECIMAL" property="weight" />
   </resultMap>
@@ -66,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, userId, height, weight
+    id, user_id, height, weight
   </sql>
   <select id="selectByExample" parameterType="com.healthmanager.model.BodyDataExample" resultMap="BaseResultMap">
     select
@@ -99,9 +99,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.healthmanager.model.BodyData">
-    insert into body_data (id, userId, height, 
+    insert into body_data (id, user_id, height, 
       weight)
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{height,jdbcType=DECIMAL}, 
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{height,jdbcType=DECIMAL}, 
       #{weight,jdbcType=DECIMAL})
   </insert>
   <insert id="insertSelective" parameterType="com.healthmanager.model.BodyData">
@@ -110,8 +110,8 @@
       <if test="id != null">
         id,
       </if>
-      <if test="userid != null">
-        userId,
+      <if test="userId != null">
+        user_id,
       </if>
       <if test="height != null">
         height,
@@ -124,8 +124,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userid != null">
-        #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
       </if>
       <if test="height != null">
         #{height,jdbcType=DECIMAL},
@@ -147,8 +147,8 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.userid != null">
-        userId = #{record.userid,jdbcType=INTEGER},
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
       </if>
       <if test="record.height != null">
         height = #{record.height,jdbcType=DECIMAL},
@@ -164,7 +164,7 @@
   <update id="updateByExample" parameterType="map">
     update body_data
     set id = #{record.id,jdbcType=INTEGER},
-      userId = #{record.userid,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
       height = #{record.height,jdbcType=DECIMAL},
       weight = #{record.weight,jdbcType=DECIMAL}
     <if test="_parameter != null">
@@ -174,8 +174,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.healthmanager.model.BodyData">
     update body_data
     <set>
-      <if test="userid != null">
-        userId = #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
       </if>
       <if test="height != null">
         height = #{height,jdbcType=DECIMAL},
@@ -188,7 +188,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.BodyData">
     update body_data
-    set userId = #{userid,jdbcType=INTEGER},
+    set user_id = #{userId,jdbcType=INTEGER},
       height = #{height,jdbcType=DECIMAL},
       weight = #{weight,jdbcType=DECIMAL}
     where id = #{id,jdbcType=INTEGER}

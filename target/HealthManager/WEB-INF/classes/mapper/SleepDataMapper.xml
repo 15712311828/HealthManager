@@ -3,7 +3,7 @@
 <mapper namespace="com.healthmanager.dao.SleepDataMapper">
   <resultMap id="BaseResultMap" type="com.healthmanager.model.SleepData">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="period" jdbcType="INTEGER" property="period" />
     <result column="time" jdbcType="DATE" property="time" />
   </resultMap>
@@ -66,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, userId, period, time
+    id, user_id, period, time
   </sql>
   <select id="selectByExample" parameterType="com.healthmanager.model.SleepDataExample" resultMap="BaseResultMap">
     select
@@ -99,9 +99,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.healthmanager.model.SleepData">
-    insert into sleep_data (id, userId, period, 
+    insert into sleep_data (id, user_id, period, 
       time)
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{period,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{period,jdbcType=INTEGER}, 
       #{time,jdbcType=DATE})
   </insert>
   <insert id="insertSelective" parameterType="com.healthmanager.model.SleepData">
@@ -110,8 +110,8 @@
       <if test="id != null">
         id,
       </if>
-      <if test="userid != null">
-        userId,
+      <if test="userId != null">
+        user_id,
       </if>
       <if test="period != null">
         period,
@@ -124,8 +124,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userid != null">
-        #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
       </if>
       <if test="period != null">
         #{period,jdbcType=INTEGER},
@@ -147,8 +147,8 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.userid != null">
-        userId = #{record.userid,jdbcType=INTEGER},
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
       </if>
       <if test="record.period != null">
         period = #{record.period,jdbcType=INTEGER},
@@ -164,7 +164,7 @@
   <update id="updateByExample" parameterType="map">
     update sleep_data
     set id = #{record.id,jdbcType=INTEGER},
-      userId = #{record.userid,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
       period = #{record.period,jdbcType=INTEGER},
       time = #{record.time,jdbcType=DATE}
     <if test="_parameter != null">
@@ -174,8 +174,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.healthmanager.model.SleepData">
     update sleep_data
     <set>
-      <if test="userid != null">
-        userId = #{userid,jdbcType=INTEGER},
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
       </if>
       <if test="period != null">
         period = #{period,jdbcType=INTEGER},
@@ -188,7 +188,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.SleepData">
     update sleep_data
-    set userId = #{userid,jdbcType=INTEGER},
+    set user_id = #{userId,jdbcType=INTEGER},
       period = #{period,jdbcType=INTEGER},
       time = #{time,jdbcType=DATE}
     where id = #{id,jdbcType=INTEGER}

@@ -20,7 +20,7 @@ public class BodyService {
     public void update(BodyUpdateParam bodyUpdateParam){
         BodyDataExample bodyDataExample=new BodyDataExample();
         BodyDataExample.Criteria criteria = bodyDataExample.createCriteria();
-        criteria.andUseridEqualTo(UserContext.getId());
+        criteria.andUserIdEqualTo(UserContext.getId());
         Long result=bodyDataMapper.countByExample(bodyDataExample);
 
         if(result==0){
@@ -34,7 +34,7 @@ public class BodyService {
     public BodyData query(){
         BodyDataExample bodyDataExample=new BodyDataExample();
         BodyDataExample.Criteria criteria = bodyDataExample.createCriteria();
-        criteria.andUseridEqualTo(UserContext.getId());
+        criteria.andUserIdEqualTo(UserContext.getId());
         List<BodyData> bodyDatas = bodyDataMapper.selectByExample(bodyDataExample);
 
         ValidUtil.checkExist(bodyDatas,"身体信息未完善");
