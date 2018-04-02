@@ -27,7 +27,7 @@ public class BodyService {
             bodyDataMapper.insert(bodyUpdateParam.toBodyData());
         }
         else{
-            bodyDataMapper.updateByExample(bodyUpdateParam.toBodyData(),bodyDataExample);
+            bodyDataMapper.updateByExampleSelective(bodyUpdateParam.toBodyData(),bodyDataExample);
         }
     }
 

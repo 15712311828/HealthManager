@@ -28,7 +28,7 @@ public class HeartService {
             heartDataMapper.insert(heartUpdateParam.toHeartData());
         }
         else{
-            heartDataMapper.updateByExample(heartUpdateParam.toHeartData(),heartDataExample);
+            heartDataMapper.updateByExampleSelective(heartUpdateParam.toHeartData(),heartDataExample);
         }
     }
 
