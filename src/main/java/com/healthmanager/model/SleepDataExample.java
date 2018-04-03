@@ -225,66 +225,6 @@ public class SleepDataExample {
             return (Criteria) this;
         }
 
-        public Criteria andDayIsNull() {
-            addCriterion("day is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayIsNotNull() {
-            addCriterion("day is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayEqualTo(Long value) {
-            addCriterion("day =", value, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayNotEqualTo(Long value) {
-            addCriterion("day <>", value, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayGreaterThan(Long value) {
-            addCriterion("day >", value, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayGreaterThanOrEqualTo(Long value) {
-            addCriterion("day >=", value, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayLessThan(Long value) {
-            addCriterion("day <", value, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayLessThanOrEqualTo(Long value) {
-            addCriterion("day <=", value, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayIn(List<Long> values) {
-            addCriterion("day in", values, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayNotIn(List<Long> values) {
-            addCriterion("day not in", values, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayBetween(Long value1, Long value2) {
-            addCriterion("day between", value1, value2, "day");
-            return (Criteria) this;
-        }
-
-        public Criteria andDayNotBetween(Long value1, Long value2) {
-            addCriterion("day not between", value1, value2, "day");
-            return (Criteria) this;
-        }
-
         public Criteria andStartTimeIsNull() {
             addCriterion("start_time is null");
             return (Criteria) this;
