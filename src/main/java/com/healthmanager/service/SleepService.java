@@ -22,11 +22,24 @@ public class SleepService {
     private SleepDataMapper sleepDataMapper;
 
     public void startSleep(){
+
         SleepData sleepData=new SleepData();
         sleepData.setUserId(UserContext.getId());
         Date date=new Date();
         sleepData.setStartTime(date);
         sleepData.setEndTime(date);
+
+        SleepDataExample sleepDataExample=new SleepDataExample();
+        SleepDataExample.Criteria criteria = sleepDataExample.createCriteria();
+        criteria.andUserIdEqualTo(UserContext.getId());
+        PageHelper.startPage(1,1);
+        PageHelper.orderBy("start_time desc");
+        List<SleepData> sleepDatas = sleepDataMapper.selectByExample(sleepDataExample);
+        if(sleepDatas.size()>0) {
+            if (sleepDatas.get(0).getStartTime().equals(sleepDatas.get(0).getEndTime())) {
+                throw new BusinessException("已经开始了");
+            }
+        }
 
         sleepDataMapper.insert(sleepData);
     }
