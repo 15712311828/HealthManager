@@ -105,15 +105,13 @@
     </column>
     <column id="28" parent="7" name="start_time">
       <Position>3</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
     <column id="29" parent="7" name="end_time">
       <Position>4</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
     </column>
     <key id="30" parent="7" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
