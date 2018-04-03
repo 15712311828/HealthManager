@@ -7,9 +7,11 @@ public class SleepData {
 
     private Integer userId;
 
-    private Integer period;
+    private Date date;
 
-    private Date time;
+    private Date startTime;
+
+    private Date endTime;
 
     public Integer getId() {
         return id;
@@ -27,19 +29,27 @@ public class SleepData {
         this.userId = userId;
     }
 
-    public Integer getPeriod() {
-        return period;
+    public Date getDate() {
+        return date;
     }
 
-    public void setPeriod(Integer period) {
-        this.period = period;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public Date getTime() {
-        return time;
+    public Date getStartTime() {
+        return startTime;
     }
 
-    public void setTime(Date time) {
-        this.time = time;
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
     }
 }

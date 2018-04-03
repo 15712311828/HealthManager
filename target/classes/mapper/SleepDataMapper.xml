@@ -4,8 +4,9 @@
   <resultMap id="BaseResultMap" type="com.healthmanager.model.SleepData">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
-    <result column="period" jdbcType="INTEGER" property="period" />
-    <result column="time" jdbcType="DATE" property="time" />
+    <result column="date" jdbcType="TIMESTAMP" property="date" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -66,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, user_id, period, time
+    id, user_id, date, start_time, end_time
   </sql>
   <select id="selectByExample" parameterType="com.healthmanager.model.SleepDataExample" resultMap="BaseResultMap">
     select
@@ -99,10 +100,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.healthmanager.model.SleepData">
-    insert into sleep_data (id, user_id, period, 
-      time)
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{period,jdbcType=INTEGER}, 
-      #{time,jdbcType=DATE})
+    insert into sleep_data (id, user_id, date, 
+      start_time, end_time)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{date,jdbcType=TIMESTAMP}, 
+      #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.healthmanager.model.SleepData">
     insert into sleep_data
@@ -113,11 +114,14 @@
       <if test="userId != null">
         user_id,
       </if>
-      <if test="period != null">
-        period,
+      <if test="date != null">
+        date,
       </if>
-      <if test="time != null">
-        time,
+      <if test="startTime != null">
+        start_time,
+      </if>
+      <if test="endTime != null">
+        end_time,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -127,11 +131,14 @@
       <if test="userId != null">
         #{userId,jdbcType=INTEGER},
       </if>
-      <if test="period != null">
-        #{period,jdbcType=INTEGER},
+      <if test="date != null">
+        #{date,jdbcType=TIMESTAMP},
       </if>
-      <if test="time != null">
-        #{time,jdbcType=DATE},
+      <if test="startTime != null">
+        #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTime != null">
+        #{endTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -150,11 +157,14 @@
       <if test="record.userId != null">
         user_id = #{record.userId,jdbcType=INTEGER},
       </if>
-      <if test="record.period != null">
-        period = #{record.period,jdbcType=INTEGER},
+      <if test="record.date != null">
+        date = #{record.date,jdbcType=TIMESTAMP},
       </if>
-      <if test="record.time != null">
-        time = #{record.time,jdbcType=DATE},
+      <if test="record.startTime != null">
+        start_time = #{record.startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.endTime != null">
+        end_time = #{record.endTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -165,8 +175,9 @@
     update sleep_data
     set id = #{record.id,jdbcType=INTEGER},
       user_id = #{record.userId,jdbcType=INTEGER},
-      period = #{record.period,jdbcType=INTEGER},
-      time = #{record.time,jdbcType=DATE}
+      date = #{record.date,jdbcType=TIMESTAMP},
+      start_time = #{record.startTime,jdbcType=TIMESTAMP},
+      end_time = #{record.endTime,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -177,11 +188,14 @@
       <if test="userId != null">
         user_id = #{userId,jdbcType=INTEGER},
       </if>
-      <if test="period != null">
-        period = #{period,jdbcType=INTEGER},
+      <if test="date != null">
+        date = #{date,jdbcType=TIMESTAMP},
       </if>
-      <if test="time != null">
-        time = #{time,jdbcType=DATE},
+      <if test="startTime != null">
+        start_time = #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTime != null">
+        end_time = #{endTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -189,8 +203,9 @@
   <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.SleepData">
     update sleep_data
     set user_id = #{userId,jdbcType=INTEGER},
-      period = #{period,jdbcType=INTEGER},
-      time = #{time,jdbcType=DATE}
+      date = #{date,jdbcType=TIMESTAMP},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      end_time = #{endTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>
