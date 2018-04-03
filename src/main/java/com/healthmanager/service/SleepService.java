@@ -29,7 +29,7 @@ public class SleepService {
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
         Date start = calendar.getTime();
-        criteria.andDateEqualTo(start);
+        criteria.andDateBetween(new Date(start.getTime()-5000),new Date(start.getTime()+5000));
 
         SleepData sleepData=new SleepData();
         sleepData.setUserId(UserContext.getId());
@@ -58,7 +58,7 @@ public class SleepService {
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
         Date start = calendar.getTime();
-        criteria.andDateEqualTo(start);
+        criteria.andDateBetween(new Date(start.getTime()-5000),new Date(start.getTime()+5000));
 
         SleepData sleepData=new SleepData();
         sleepData.setEndTime(new Date());
