@@ -7,7 +7,7 @@ public class SleepData {
 
     private Integer userId;
 
-    private Date date;
+    private Long day;
 
     private Date startTime;
 
@@ -29,12 +29,12 @@ public class SleepData {
         this.userId = userId;
     }
 
-    public Date getDate() {
-        return date;
+    public Long getDay() {
+        return day;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDay(Long day) {
+        this.day = day;
     }
 
     public Date getStartTime() {

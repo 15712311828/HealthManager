@@ -225,63 +225,63 @@ public class SleepDataExample {
             return (Criteria) this;
         }
 
-        public Criteria andDateIsNull() {
-            addCriterion("date is null");
+        public Criteria andDayIsNull() {
+            addCriterion("day is null");
             return (Criteria) this;
         }
 
-        public Criteria andDateIsNotNull() {
-            addCriterion("date is not null");
+        public Criteria andDayIsNotNull() {
+            addCriterion("day is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDateEqualTo(Date value) {
-            addCriterion("date =", value, "date");
+        public Criteria andDayEqualTo(Long value) {
+            addCriterion("day =", value, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateNotEqualTo(Date value) {
-            addCriterion("date <>", value, "date");
+        public Criteria andDayNotEqualTo(Long value) {
+            addCriterion("day <>", value, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateGreaterThan(Date value) {
-            addCriterion("date >", value, "date");
+        public Criteria andDayGreaterThan(Long value) {
+            addCriterion("day >", value, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateGreaterThanOrEqualTo(Date value) {
-            addCriterion("date >=", value, "date");
+        public Criteria andDayGreaterThanOrEqualTo(Long value) {
+            addCriterion("day >=", value, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateLessThan(Date value) {
-            addCriterion("date <", value, "date");
+        public Criteria andDayLessThan(Long value) {
+            addCriterion("day <", value, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateLessThanOrEqualTo(Date value) {
-            addCriterion("date <=", value, "date");
+        public Criteria andDayLessThanOrEqualTo(Long value) {
+            addCriterion("day <=", value, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateIn(List<Date> values) {
-            addCriterion("date in", values, "date");
+        public Criteria andDayIn(List<Long> values) {
+            addCriterion("day in", values, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateNotIn(List<Date> values) {
-            addCriterion("date not in", values, "date");
+        public Criteria andDayNotIn(List<Long> values) {
+            addCriterion("day not in", values, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateBetween(Date value1, Date value2) {
-            addCriterion("date between", value1, value2, "date");
+        public Criteria andDayBetween(Long value1, Long value2) {
+            addCriterion("day between", value1, value2, "day");
             return (Criteria) this;
         }
 
-        public Criteria andDateNotBetween(Date value1, Date value2) {
-            addCriterion("date not between", value1, value2, "date");
+        public Criteria andDayNotBetween(Long value1, Long value2) {
+            addCriterion("day not between", value1, value2, "day");
             return (Criteria) this;
         }
 

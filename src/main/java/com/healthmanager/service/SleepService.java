@@ -23,18 +23,13 @@ public class SleepService {
         SleepDataExample sleepDataExample=new SleepDataExample();
         SleepDataExample.Criteria criteria = sleepDataExample.createCriteria();
         criteria.andUserIdEqualTo(UserContext.getId());
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
-        calendar.set(Calendar.HOUR_OF_DAY, 0);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        Date start = calendar.getTime();
-        criteria.andDateBetween(new Date(start.getTime()-5000),new Date(start.getTime()+5000));
+        Date date = new Date();
+        Long day=date.getTime()/(24*60*60*1000);
+        criteria.andDayEqualTo(day);
 
         SleepData sleepData=new SleepData();
         sleepData.setUserId(UserContext.getId());
-        sleepData.setDate(start);
-        Date date = new Date();
+        sleepData.setDay(day);
         sleepData.setStartTime(date);
         sleepData.setEndTime(date);
 
@@ -54,14 +49,12 @@ public class SleepService {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
         calendar.add(Calendar.DATE,   -1);
-        calendar.set(Calendar.HOUR_OF_DAY, 0);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        Date start = calendar.getTime();
-        criteria.andDateBetween(new Date(start.getTime()-5000),new Date(start.getTime()+5000));
+        Date date = calendar.getTime();
+        Long day=date.getTime()/(24*60*60*1000);
+        criteria.andDayEqualTo(day);
 
         SleepData sleepData=new SleepData();
-        sleepData.setEndTime(new Date());
+        sleepData.setEndTime(date);
 
         Long result=sleepDataMapper.countByExample(sleepDataExample);
         if(result>0){
@@ -79,11 +72,9 @@ public class SleepService {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
         calendar.add(Calendar.DATE,   -5);
-        calendar.set(Calendar.HOUR_OF_DAY, 0);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        Date start = calendar.getTime();
-        criteria.andDateGreaterThan(start);
+        Date date = calendar.getTime();
+        Long day=date.getTime()/(24*60*60*1000);
+        criteria.andDayGreaterThan(day);
         List<SleepData> sleepData = sleepDataMapper.selectByExample(sleepDataExample);
         return sleepData;
     }
