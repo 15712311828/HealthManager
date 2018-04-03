@@ -54,7 +54,7 @@ public class SleepService {
         criteria.andDayEqualTo(day);
 
         SleepData sleepData=new SleepData();
-        sleepData.setEndTime(date);
+        sleepData.setEndTime(new Date());
 
         Long result=sleepDataMapper.countByExample(sleepDataExample);
         if(result>0){
