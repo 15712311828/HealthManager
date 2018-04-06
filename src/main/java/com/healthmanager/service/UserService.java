@@ -86,8 +86,10 @@ public class UserService {
     }
 
     public void forgetPassword(ForgetPasswordParam param){
+        UserExample emailExample=new UserExample();
+        UserExample.Criteria emailCriteria = emailExample.createCriteria();
+        emailCriteria.andEmailEqualTo(param.getEmail());
         User user = param.toUser();
-        user.setId(UserContext.getId());
-        userMapper.updateByPrimaryKeySelective(user);
+        userMapper.updateByExampleSelective(user,emailExample);
     }
 }
