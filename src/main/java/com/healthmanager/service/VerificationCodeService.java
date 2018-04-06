@@ -20,7 +20,7 @@ public class VerificationCodeService {
 
     public void sendCode(String email){
         int randNum = 100000 + (int)(Math.random() * ((999999 - 100000)));
-        EmailUtil.sendMailAsync(email,"验证码","您的验证码为"+randNum);
+        EmailUtil.sendMailAsync(email,"验证码","您的验证码为"+randNum+",有效期15分钟");
         VerificationCodeExample verificationCodeExample=new VerificationCodeExample();
         VerificationCodeExample.Criteria criteria = verificationCodeExample.createCriteria();
         criteria.andEmailEqualTo(email);
