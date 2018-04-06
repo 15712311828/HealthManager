@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 
 @Slf4j
 @Service
@@ -28,12 +29,14 @@ public class VerificationCodeService {
             VerificationCode verificationCode=new VerificationCode();
             verificationCode.setEmail(email);
             verificationCode.setCode(randNum+"");
+            verificationCode.setTime(new Date());
             verificationCodeMapper.insert(verificationCode);
         }
         else{
             VerificationCode verificationCode=new VerificationCode();
             verificationCode.setEmail(email);
             verificationCode.setCode(randNum+"");
+            verificationCode.setTime(new Date());
             verificationCodeMapper.updateByExampleSelective(verificationCode,verificationCodeExample);
         }
     }
@@ -42,10 +45,14 @@ public class VerificationCodeService {
         VerificationCodeExample verificationCodeExample=new VerificationCodeExample();
         VerificationCodeExample.Criteria criteria = verificationCodeExample.createCriteria();
         criteria.andEmailEqualTo(email)
-                .andCodeEqualTo(code);
+                .andCodeEqualTo(code)
+                .andTimeGreaterThan(new Date(new Date().getTime()-15*60*1000));
         long result = verificationCodeMapper.countByExample(verificationCodeExample);
         if(result==0){
-            throw new BusinessException("验证码错误");
+            throw new BusinessException("验证码错误或已失效");
         }
+        VerificationCode verificationCode=new VerificationCode();
+        verificationCode.setTime(new Date(new Date().getTime()-24*60*60*1000));
+        verificationCodeMapper.updateByExampleSelective(verificationCode,verificationCodeExample);
     }
 }

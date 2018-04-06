@@ -1,11 +1,15 @@
 package com.healthmanager.model;
 
+import java.util.Date;
+
 public class VerificationCode {
     private Integer id;
 
     private String email;
 
     private String code;
+
+    private Date time;
 
     public Integer getId() {
         return id;
@@ -29,5 +33,13 @@ public class VerificationCode {
 
     public void setCode(String code) {
         this.code = code == null ? null : code.trim();
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
     }
 }

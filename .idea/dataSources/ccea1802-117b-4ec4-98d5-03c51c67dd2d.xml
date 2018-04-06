@@ -170,42 +170,47 @@
       <DataType>varchar(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="41" parent="9" name="verification_code_email_uindex">
+    <column id="41" parent="9" name="time">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="42" parent="9" name="verification_code_email_uindex">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="42" parent="9" name="PRIMARY">
+    <key id="43" parent="9" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="43" parent="9" name="verification_code_email_uindex">
+    <key id="44" parent="9" name="verification_code_email_uindex">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>verification_code_email_uindex</UnderlyingIndexName>
     </key>
-    <column id="44" parent="10" name="id">
+    <column id="45" parent="10" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="45" parent="10" name="user_id">
+    <column id="46" parent="10" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="46" parent="10" name="milliliter">
+    <column id="47" parent="10" name="milliliter">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="10" name="time">
+    <column id="48" parent="10" name="time">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <key id="48" parent="10" name="PRIMARY">
+    <key id="49" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

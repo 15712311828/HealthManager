@@ -5,10 +5,7 @@ import com.healthmanager.dao.UserMapper;
 import com.healthmanager.exception.BusinessException;
 import com.healthmanager.model.User;
 import com.healthmanager.model.UserExample;
-import com.healthmanager.param.ChangeInfoParam;
-import com.healthmanager.param.ChangePasswordParam;
-import com.healthmanager.param.SignInParam;
-import com.healthmanager.param.SignUpParam;
+import com.healthmanager.param.*;
 import com.healthmanager.util.LoginUtil;
 import com.healthmanager.util.ValidUtil;
 import org.springframework.stereotype.Service;
@@ -73,6 +70,22 @@ public class UserService {
     }
 
     public void changePassword(ChangePasswordParam param){
+        User user = param.toUser();
+        user.setId(UserContext.getId());
+        userMapper.updateByPrimaryKeySelective(user);
+    }
+
+    public void checkEmailExit(String email){
+        UserExample emailExample=new UserExample();
+        UserExample.Criteria emailCriteria = emailExample.createCriteria();
+        emailCriteria.andEmailEqualTo(email);
+        long emailResult = userMapper.countByExample(emailExample);
+        if(emailResult==0){
+            throw new BusinessException("该邮箱尚未注册");
+        }
+    }
+
+    public void forgetPassword(ForgetPasswordParam param){
         User user = param.toUser();
         user.setId(UserContext.getId());
         userMapper.updateByPrimaryKeySelective(user);

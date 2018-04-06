@@ -66,4 +66,12 @@ public class UserController {
         userService.changePassword(param);
         return JsonResult.success();
     }
+
+    @RequestMapping("/forgetPassword")
+    public JsonResult forgetPassword(@RequestBody @Valid ForgetPasswordParam param){
+        userService.checkEmailExit(param.getEmail());
+        verificationCodeService.checkCode(param.getEmail(),param.getCode());
+        userService.forgetPassword(param);
+        return JsonResult.success();
+    }
 }
