@@ -7,40 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2317178-5ca0-48e8-9f1f-309742ad255b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ForgetPasswordParam.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/BodyDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/HeartDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/RunningDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/SleepDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/VerificationCodeMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/WaterDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/BodyData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/BodyDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/HeartData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/HeartDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/RunningData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/RunningDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/SleepData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/SleepDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/VerificationCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/VerificationCodeExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/WaterData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/WaterDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/BodyDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/HeartDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/RunningDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/SleepDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/VerificationCodeMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/WaterDataMapper.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/dataSources/ccea1802-117b-4ec4-98d5-03c51c67dd2d.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/dataSources/ccea1802-117b-4ec4-98d5-03c51c67dd2d.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../HealthManager/out/" />
     <ignored path="$PROJECT_DIR$/../HealthManager/target/" />
@@ -80,21 +48,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="72" column="39" lean-forward="false" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="83" column="51" lean-forward="false" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+            <state relative-caret-position="191">
+              <caret line="92" column="63" lean-forward="true" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -103,8 +71,8 @@
       <file leaf-file-name="ForgetPasswordParam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ForgetPasswordParam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="115">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +128,8 @@
       <file leaf-file-name="VerificationCodeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="55" column="98" lean-forward="false" selection-start-line="55" selection-start-column="98" selection-end-line="55" selection-end-column="98" />
+            <state relative-caret-position="44">
+              <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -252,8 +220,8 @@
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/SleepService.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ForgetPasswordParam.java" />
-        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -277,7 +245,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="47" />
     <option name="y" value="95" />
     <option name="width" value="1346" />
@@ -683,7 +651,7 @@
       <workItem from="1522648905397" duration="33000" />
       <workItem from="1522648985049" duration="66000" />
       <workItem from="1522649092902" duration="25550000" />
-      <workItem from="1522943815916" duration="1610000" />
+      <workItem from="1522943815916" duration="2545000" />
     </task>
     <servers />
   </component>
@@ -720,10 +688,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82177000" />
+    <option name="totallyTimeSpent" value="83112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1120,23 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/SleepService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="39" column="49" lean-forward="false" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ChangePasswordParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1147,34 +1098,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/ForgetPasswordParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="115">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="72" column="39" lean-forward="false" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="55" column="98" lean-forward="false" selection-start-line="55" selection-start-column="98" selection-end-line="55" selection-end-column="98" />
+        <state relative-caret-position="44">
+          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/de7574dc/ccea1802-117b-4ec4-98d5-03c51c67dd2d/health_manager.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/SleepService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="39" column="49" lean-forward="false" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="83" column="51" lean-forward="false" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        <state relative-caret-position="191">
+          <caret line="92" column="63" lean-forward="true" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
           <folding />
         </state>
       </provider>
