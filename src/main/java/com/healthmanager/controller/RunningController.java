@@ -4,6 +4,7 @@ import com.healthmanager.common.JsonResult;
 import com.healthmanager.param.RunningAddParam;
 import com.healthmanager.service.RunningService;
 import com.healthmanager.util.ValidUtil;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +19,7 @@ public class RunningController {
     RunningService runningService;
 
     @RequestMapping("/add")
-    public JsonResult add(@RequestParam RunningAddParam param){
+    public JsonResult add(@RequestBody RunningAddParam param){
         ValidUtil.checkLogin();
         runningService.add(param);
         return JsonResult.success();
