@@ -7,40 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2317178-5ca0-48e8-9f1f-309742ad255b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/RunningController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/RunningService.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/BodyDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/HeartDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/RunningDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/SleepDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/VerificationCodeMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/dao/WaterDataMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/BodyData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/BodyDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/HeartData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/HeartDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/RunningData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/RunningDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/SleepData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/SleepDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/VerificationCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/VerificationCodeExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/WaterData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/model/WaterDataExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/BodyDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/HeartDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/RunningDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/SleepDataMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/VerificationCodeMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../HealthManager/src/main/resources/mapper/WaterDataMapper.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/dataSources/ccea1802-117b-4ec4-98d5-03c51c67dd2d.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/dataSources/ccea1802-117b-4ec4-98d5-03c51c67dd2d.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HealthManager/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java" afterPath="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../HealthManager/out/" />
     <ignored path="$PROJECT_DIR$/../HealthManager/target/" />
@@ -111,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunningService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RunningService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/RunningService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="607">
@@ -125,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunningController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunningController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/RunningController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            <state relative-caret-position="208">
+              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +128,8 @@
       <file leaf-file-name="RunningAddParam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="196">
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -255,9 +223,9 @@
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/UserController.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/UserService.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/VerificationCodeService.java" />
-        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/RunningService.java" />
         <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/RunningController.java" />
+        <option value="$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java" />
       </list>
     </option>
   </component>
@@ -281,7 +249,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -727,7 +695,7 @@
       <workItem from="1523267676126" duration="1017000" />
       <workItem from="1523865288439" duration="74000" />
       <workItem from="1523869681862" duration="636000" />
-      <workItem from="1526718160004" duration="4635000" />
+      <workItem from="1526718160004" duration="5367000" />
     </task>
     <servers />
   </component>
@@ -764,10 +732,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90320000" />
+    <option name="totallyTimeSpent" value="91052000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -787,7 +755,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49423394" sideWeight="0.7019667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49423394" sideWeight="0.7019667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -963,6 +931,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,6 +982,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,16 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/SleepService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -1167,30 +1131,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/RunningService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/HeartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/SleepController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1205,10 +1149,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/RunningController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        <state relative-caret-position="208">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/param/RunningAddParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/controller/SleepController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HealthManager/src/main/java/com/healthmanager/service/RunningService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
           </folding>
         </state>
       </provider>
