@@ -9,8 +9,6 @@ public class RunningData {
 
     private Integer step;
 
-    private Integer distance;
-
     private Date time;
 
     public Integer getId() {
@@ -35,14 +33,6 @@ public class RunningData {
 
     public void setStep(Integer step) {
         this.step = step;
-    }
-
-    public Integer getDistance() {
-        return distance;
-    }
-
-    public void setDistance(Integer distance) {
-        this.distance = distance;
     }
 
     public Date getTime() {

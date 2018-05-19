@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.healthmanager.dao.RunningDataMapper">
-  <resultMap id="BaseResultMap" type="com.healthmanager.model.RunningData">
+<mapper namespace="com.healthmanager.dao.WaterDataMapper">
+  <resultMap id="BaseResultMap" type="com.healthmanager.model.WaterData">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
-    <result column="step" jdbcType="INTEGER" property="step" />
-    <result column="time" jdbcType="DATE" property="time" />
+    <result column="milliliter" jdbcType="INTEGER" property="milliliter" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -66,15 +66,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, user_id, step, time
+    id, user_id, milliliter, time
   </sql>
-  <select id="selectByExample" parameterType="com.healthmanager.model.RunningDataExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.healthmanager.model.WaterDataExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from running_data
+    from water_data
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -85,27 +85,27 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from running_data
+    from water_data
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from running_data
+    delete from water_data
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.healthmanager.model.RunningDataExample">
-    delete from running_data
+  <delete id="deleteByExample" parameterType="com.healthmanager.model.WaterDataExample">
+    delete from water_data
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.healthmanager.model.RunningData">
-    insert into running_data (id, user_id, step, 
+  <insert id="insert" parameterType="com.healthmanager.model.WaterData">
+    insert into water_data (id, user_id, milliliter, 
       time)
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{step,jdbcType=INTEGER}, 
-      #{time,jdbcType=DATE})
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{milliliter,jdbcType=INTEGER}, 
+      #{time,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.healthmanager.model.RunningData">
-    insert into running_data
+  <insert id="insertSelective" parameterType="com.healthmanager.model.WaterData">
+    insert into water_data
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
@@ -113,8 +113,8 @@
       <if test="userId != null">
         user_id,
       </if>
-      <if test="step != null">
-        step,
+      <if test="milliliter != null">
+        milliliter,
       </if>
       <if test="time != null">
         time,
@@ -127,22 +127,22 @@
       <if test="userId != null">
         #{userId,jdbcType=INTEGER},
       </if>
-      <if test="step != null">
-        #{step,jdbcType=INTEGER},
+      <if test="milliliter != null">
+        #{milliliter,jdbcType=INTEGER},
       </if>
       <if test="time != null">
-        #{time,jdbcType=DATE},
+        #{time,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.healthmanager.model.RunningDataExample" resultType="java.lang.Long">
-    select count(*) from running_data
+  <select id="countByExample" parameterType="com.healthmanager.model.WaterDataExample" resultType="java.lang.Long">
+    select count(*) from water_data
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update running_data
+    update water_data
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
@@ -150,11 +150,11 @@
       <if test="record.userId != null">
         user_id = #{record.userId,jdbcType=INTEGER},
       </if>
-      <if test="record.step != null">
-        step = #{record.step,jdbcType=INTEGER},
+      <if test="record.milliliter != null">
+        milliliter = #{record.milliliter,jdbcType=INTEGER},
       </if>
       <if test="record.time != null">
-        time = #{record.time,jdbcType=DATE},
+        time = #{record.time,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -162,35 +162,35 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update running_data
+    update water_data
     set id = #{record.id,jdbcType=INTEGER},
       user_id = #{record.userId,jdbcType=INTEGER},
-      step = #{record.step,jdbcType=INTEGER},
-      time = #{record.time,jdbcType=DATE}
+      milliliter = #{record.milliliter,jdbcType=INTEGER},
+      time = #{record.time,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.healthmanager.model.RunningData">
-    update running_data
+  <update id="updateByPrimaryKeySelective" parameterType="com.healthmanager.model.WaterData">
+    update water_data
     <set>
       <if test="userId != null">
         user_id = #{userId,jdbcType=INTEGER},
       </if>
-      <if test="step != null">
-        step = #{step,jdbcType=INTEGER},
+      <if test="milliliter != null">
+        milliliter = #{milliliter,jdbcType=INTEGER},
       </if>
       <if test="time != null">
-        time = #{time,jdbcType=DATE},
+        time = #{time,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.RunningData">
-    update running_data
+  <update id="updateByPrimaryKey" parameterType="com.healthmanager.model.WaterData">
+    update water_data
     set user_id = #{userId,jdbcType=INTEGER},
-      step = #{step,jdbcType=INTEGER},
-      time = #{time,jdbcType=DATE}
+      milliliter = #{milliliter,jdbcType=INTEGER},
+      time = #{time,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>
