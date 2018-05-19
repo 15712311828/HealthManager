@@ -24,17 +24,11 @@ public class RunningService {
     }
 
     public int getToday(){
-        Calendar c = Calendar.getInstance();
-        c.set(Calendar.HOUR_OF_DAY, 0);
-        c.set(Calendar.MINUTE, 0);
-        c.set(Calendar.SECOND, 0);
-        c.set(Calendar.MILLISECOND, 0);
-        Long today=c.getTimeInMillis();
 
         RunningDataExample example=new RunningDataExample();
         RunningDataExample.Criteria criteria = example.createCriteria();
         criteria.andUserIdEqualTo(UserContext.getId());
-        criteria.andTimeGreaterThan(new Date(today));
+        criteria.andTimeEqualTo(new Date());
         List<RunningData> runningData = runningDataMapper.selectByExample(example);
         if(runningData.isEmpty()){
             return 0;
